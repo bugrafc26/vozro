@@ -969,3 +969,150 @@ body {
         flex-direction: column;
     }
 }
+
+/* ==========================================================================
+   Mobil Uyumlu CSS - Sadece 768px altındaki cihazlar için
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    /* Genel Ayarlar */
+    .product-page-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    /* Üst Siyah Çubuk */
+    .top-bar-black {
+        display: none; /* Mobil ekranda üst barı gizle */
+    }
+
+    /* Beyaz Navigasyon Çubuğu */
+    .main-nav-white {
+        padding: 10px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .nav-left {
+        flex-grow: 1;
+        justify-content: flex-start;
+    }
+
+    .nav-center {
+        width: 100%; /* Mobil menü için tam genişlik */
+        order: 3; /* En alta taşı */
+        display: none; /* Varsayılan olarak menüyü gizle */
+        flex-direction: column;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    .nav-center.active {
+        display: flex; /* JavaScript ile açıldığında göster */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-right {
+        order: 2; /* İkonları logo yanına taşı */
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+    
+    .nav-right .nav-icon {
+        margin: 0 5px;
+    }
+
+    /* Ana Sayfa Hero Bölümü */
+    .hero-section {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    /* Yan Menü (Sidebar) */
+    .product-sidebar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        display: none; /* Varsayılan olarak filtreleri gizle */
+    }
+
+    .product-sidebar.active {
+        display: block; /* Mobil filtre butonu ile açıldığında göster */
+    }
+
+    .filter-header {
+        display: none;
+    }
+
+    .mobile-filter-button {
+        display: block; /* Mobil filtre butonunu göster */
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .product-main-content {
+        width: 100%;
+    }
+
+    .product-controls-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sort-dropdown {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    /* Ürün Kartları */
+    .product-list-page {
+        grid-template-columns: 1fr; /* Mobil cihazlarda tek sütun */
+    }
+
+    /* Footer (Alt Kısım) */
+    .footer-middle {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer-newsletter {
+        margin-bottom: 30px;
+    }
+
+    .footer-links-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-top {
+        flex-wrap: wrap;
+    }
+
+    .footer-top-item {
+        width: 50%;
+        margin-bottom: 20px;
+        text-align: center;
+        border: none;
+    }
+}

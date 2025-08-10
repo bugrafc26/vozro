@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bi ELMA Teknoloji</title>
+    <title>VOZORD STORE</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header class="main-header">
         <div class="top-bar-black">
             <div class="top-bar-left">
@@ -36,7 +35,7 @@
             <div class="nav-left">
                 <a href="index.html" class="logo-link">
                     <img src="logo.png" alt="Bi ELMA Logo" class="logo">
-                    <span class="logo-text">Bİ ELMA</span>
+                    <span class="logo-text">VOZORD STORE</span>
                 </a>
             </div>
             <div class="nav-center">
@@ -44,10 +43,10 @@
                     <li><a href="akilli-saatler.html">Akıllı Saat</a></li>
                     <li><a href="kulaklik.html">Kulaklık</a></li>
                     <li><a href="aksesuar.html">Aksesuar</a></li>
-                    <li><a href="#">Araç İçi Ürünler</a></li>
-                    <li><a href="#">Projeksiyon</a></li>
-                    <li><a href="#">Akıllı Ürün</a></li>
-                    <li><a href="#">Efsane Kampanyalar</a></li>
+                    <li><a href="arac-ici-urunler.html">Araç İçi Ürünler</a></li>
+                    <li><a href="projeksiyon.html">Projeksiyon</a></li>
+                    <li><a href="akilli-urun.html">Akıllı Ürün</a></li>
+                    <li><a href="efsane-kampanyalar.html">Efsane Kampanyalar</a></li>
                 </ul>
             </div>
             <div class="nav-right">
@@ -58,41 +57,70 @@
         </nav>
     </header>
 
-    <main>
-        <section class="hero-slider">
-            <div class="slider-container">
-                <div class="slide">
+<main>
+    <section class="hero-slider" id="main-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <a href="efsane-kampanyalar.html">
                     <div class="background-image" style="background-image: url('tavsanlar.jpg');"></div>
                     <div class="hero-content">
-                        <div class="shop-button-container-tavsan">
-                            <a href="#" class="shop-button-tavsan">Mağazaya Git</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="background-image" style="background-image: url('made-for-comfort.jpg');"></div>
-                    <div class="hero-content">
-                        <div class="hero-text-container">
-                            <span class="made-for-text">MADE FOR</span>
-                            <span class="comfort-text">COMFORT</span>
-                        </div>
-                        <p class="hero-subtitle">Yaza özel son teknolojik ürünlerimizi hemen keşfet!..</p>
                         <div class="shop-button-container">
-                            <a href="#" class="shop-button">
-                                Sipariş Ver
+                            <a href="efsane-kampanyalar.html" class="shop-button">
+                                Mağazaya Git
                                 <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="slider-arrow left-arrow"><i class="fas fa-chevron-left"></i></div>
-            <div class="slider-arrow right-arrow"><i class="fas fa-chevron-right"></i></div>
-            <div class="pagination-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
+
+            <div class="slide">
+                <a href="kulaklik.html">
+                    <div class="background-image" style="background-image: url('made-for-comfort.jpg');"></div>
+                    <div class="hero-content">
+                        <div class="hero-text-container">
+                            <span class="made-for-text">VOZORD STORE</span>
+                            <span class="comfort-text"></span>
+                        </div>
+                        <p class="hero-subtitle">Yaza özel son teknolojik ürünlerimizi hemen keşfet!..</p>
+                        <div class="shop-button-container">
+                            <a href="kulaklik.html" class="shop-button">
+                                Kulaklıkları İncele
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </a>
             </div>
-        </section>
+
+            <div class="slide">
+                <a href="akilli-saatler.html">
+                    <div class="background-image" style="background-image: url('maxresdefault.jpg');"></div>
+                    <div class="hero-content">
+                        <div class="hero-text-container">
+                            <span class="made-for-text">SINIRLI SAYIDA</span>
+                            <span class="comfort-text">AKILLI SAATLER</span>
+                        </div>
+                        <p class="hero-subtitle">En son teknolojiye sahip akıllı saatlerimizi kaçırmayın!</p>
+                        <div class="shop-button-container">
+                            <a href="akilli-saatler.html" class="shop-button">
+                                Şimdi Satın Al
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="slider-arrow left-arrow"><i class="fas fa-chevron-left"></i></div>
+        <div class="slider-arrow right-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="pagination-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
 
         <section class="products-section">
             <div class="product-filters">
@@ -183,9 +211,10 @@
             </div>
         </section>
 
-        <section class="smartwatch-banner-section">
+<main>
+    <section class="smartwatch-banner-section">
+        <a href="akilli-saatler.html">
             <div class="smartwatch-banner-content">
-                <img src="akilli-saat-banner-bg.jpg" alt="Smartwatch Banner" class="smartwatch-banner-image">
                 <div class="smartwatch-banner-text">
                     <p class="smartwatch-banner-subtitle">İHTİŞAMLI PERFORMANS</p>
                     <h2 class="smartwatch-banner-title">Yeni Akıllı Saat<br>HK10 ULTRA 3</h2>
@@ -195,7 +224,9 @@
                     </a>
                 </div>
             </div>
-        </section>
+        </a>
+    </section>
+</main>
     </main>
 
     <footer class="main-footer">
@@ -276,7 +307,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2023 Bİ ELMA, Tüm Hakları Saklıdır.</p>
+            <p>&copy; 2023 VOZORD STORE, Tüm Hakları Saklıdır.</p>
         </div>
     </footer>
 
